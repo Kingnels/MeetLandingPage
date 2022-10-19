@@ -67,8 +67,40 @@ body {
     }
     .image{
         width:100%;
+        border: 1px solid orange;
+        display: flex;
+        justify-content: space-between;
 
         ing{
-            
+            width: 50%;
+            // border: 1px solid rgb(19, 78, 255);
+
+        }
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-family: 'Red Hat Display';
+            font-style: Black;
+            font-size: 4rem;
+            line-height: 90%;
+            width: 420px;
+            height: 129px;
+            text-align: center;
+            margin-top: 3.4rem;
+            margin-bottom: 1rem;
+        }
+
+        h4{
+            font-size: 1.1rem;
+            text-align: center;
+            color: $grey;
+            width: 457px;height: 50px;
+            font-weight:300;
         }
     }
