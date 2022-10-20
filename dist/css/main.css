@@ -71,6 +71,44 @@ footer #download-btn {
   background-color: white;
 }
 
+@media screen and (min-width: 800px) {
+  body {
+    border: 1px solid white;
+    width: 100vw;
+  }
+  .container {
+    min-width: 100%;
+    border: 1px solid white;
+  }
+  .image {
+    position: relative;
+    border: 1px solid white;
+    align-self: start;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .image ing {
+    width: 50%;
+  }
+  .text {
+    position: absolute;
+    z-index: 1000;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+  .btn-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 1.4rem;
+  }
+}
 body {
   display: flex;
   justify-content: center;
@@ -128,9 +166,10 @@ body {
 }
 
 .image {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  flex: 1 1 auto;
 }
 .image ing {
   width: 50%;
@@ -141,6 +180,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 100%;
 }
 .text h1 {
   font-family: "Red Hat Display";
@@ -166,6 +206,8 @@ body {
 
 .btn-container {
   display: flex;
+  justify-content: center;
+  align-self: center;
   gap: 1.4rem;
 }
 
@@ -204,6 +246,7 @@ button, #download-btn, footer #download-btn {
   display: grid;
   place-content: center;
   border-radius: 50%;
+  background-color: white;
 }
 
 .photo-container {
